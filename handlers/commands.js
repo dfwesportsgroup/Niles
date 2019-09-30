@@ -274,7 +274,7 @@ function generateCalendar(message, dayMap) {
   }
   let embed = new bot.discord.RichEmbed();
   embed.setTitle("DFW Esports Group Calendar - Click here for event details");
-  embed.setURL("https://calendar.google.com/calendar/embed?src=" + guildSettings.calendarID);
+  embed.setURL("https://calendar.google.com/calendar/embed?src=" + guildSettings.calendarID + "&ctz=" + guildSettings.timezone);
   embed.setColor("BLUE");
   embed.setDescription(finalString);
   embed.setFooter("Last update");
